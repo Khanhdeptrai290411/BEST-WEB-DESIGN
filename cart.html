@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styleCart.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Cabin:700);
+
+/* HTML5 Boilerplate accessible hidden styles */
+[type="radio"] {
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 0.5px; 
+  margin-right: 6px; 
+  overflow: hidden; 
+  padding: 0; 
+  position: absolute; 
+  width: 0.5px;
+}
+
+/* One radio button per line */
+label {
+  display: block;
+  cursor: pointer;
+  line-height: 15px; /* 40px * 50% = 20px */
+  font-size: 22px; /* 24px * 50% = 12px */
+}
+
+[type="radio"] + span {
+  display: block;
+}
+
+/* the basic, unchecked style */
+[type="radio"] + span:before {
+  content: '';
+  display: inline-block;
+  width: 10px; /* 16px * 50% = 8px */
+  height: 10px; /* 16px * 50% = 8px */
+  vertical-align: -2px; /* -4px * 50% = -2px */
+  border-radius: 8px; /* 16px * 50% = 8px */
+  border: 1px solid #fff; /* 2px * 50% = 1px */
+  box-shadow: 0 0 0 1px #000; /* 2px * 50% = 1px */
+  margin-right: 6px; /* 12px * 50% = 6px */
+  transition: 0.5s ease all;
+}
+
+/* the checked style using the :checked pseudo class */
+[type="radio"]:checked + span:before {
+  background: crimson;
+  box-shadow: 0 0 0 2px #000; /* 4px * 50% = 2px */
+}
+
+
+/* Nothing to see here. */
+
+fieldset {
+
+  font-size: 8px; /* 16px * 50% = 8px */
+  border: 1px solid #000; /* 2px * 50% = 1px */
+  padding: 18px; /* 32px * 50% = 16px */
+  border-radius: 4px; /* 8px * 50% = 4px */
+}
+@media(max-width:500px) {
+  fieldset {
+padding: 13px; /* 32px * 50% = 16px */
+}
+}
+legend {
+  color: #fff;
+  background: #000;
+  padding: 2px 8px; /* 4px * 50% = 2px, 16px * 50% = 8px */
+  border-radius: 8px; /* 16px * 50% = 8px */
+  font-size: 1.1rem;
+}
+
+.loading-bar-container {
+           display:flex; 
+            width: 100%;
+            height: 30px;
+            background-color: #121212;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .loading-bar-progress {
+          display:flex;
+          justify-content: center;
+          align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: crimson
+        }
+
+        .loading-bar-percentage {
+            position:absolute;
+            left:40%;
+            color: #fff;
+            z-index: 999;
+            font-weight: 700;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+  .btn{
+  background-color: crimson;
+  border-color: crimson;
+  color: white;
+  width: 100%;
+  font-size: 0.7rem;
+  margin-top: 4vh;
+  padding: 1vh;
+  border-radius: 0;
+}
+.btn:focus{
+  box-shadow: none;
+  outline: none;
+  box-shadow: none;
+  color: white;
+  -webkit-box-shadow: none;
+  transition: none; 
+}
+.btn:hover{
+  color: white;
+}
+</style>
+<body>
+  <div class="card">
+    <div class="row">
+        <div class="col-md-8 cart">
+            <div class="title">
+                <div class="row">
+                    <div class="col"><h4><b>Shopping Cart</b></h4></div>
+                    <div class="col align-self-center text-right text-muted">3 items</div>
+                </div>
+            </div>    
+            <div class="row border-top border-bottom">
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="images/product1.jpg"></div>
+                    <div class="col">
+                        <div class="row text-muted">Shirt</div>
+                        <div class="row">Cotton T-shirt</div>
+                    </div>
+                    <div class="col">
+                        <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                    </div>
+                    <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="images/product1.jpg"></div>
+                    <div class="col">
+                        <div class="row text-muted">Shirt</div>
+                        <div class="row">Cotton T-shirt</div>
+                    </div>
+                    <div class="col">
+                        <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                    </div>
+                    <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                </div>
+            </div>
+            <div class="row border-top border-bottom">
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="images/product1.jpg"></div>
+                    <div class="col">
+                        <div class="row text-muted">Shirt</div>
+                        <div class="row">Cotton T-shirt</div>
+                    </div>
+                    <div class="col">
+                        <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
+                    </div>
+                    <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                </div>
+            </div>
+            <div class="back-to-shop">
+      
+              <fieldset>
+                <legend>Which project do you want to donate:</legend>
+                <label for="accessible">
+                  <input type="radio" value="accessible" name="project"  id="accessible"> <span>Animal Protection</span>
+                </label>
+              
+                <label for="pretty">
+                  <input type="radio" value="pretty"name="project"  id="pretty"> <span>Biodiversity Conservation</span>
+                </label>
+              
+                <label for="accessible-and-pretty">
+                  <input type="radio" value="pretty"name="project"  id="accessible-and-pretty" checked> <span>Volunteer</span>
+                </label>
+
+              </fieldset>
+            </div>
+        </div>
+        <div class="col-md-4 summary">
+            <div><h5><b>Summary</b></h5></div>
+            <hr>
+            <div class="row">
+                <div class="col" style="padding-left:0;"><span class="num"> 3 </span>ITEMS </div>
+                <div class="col text-right">&euro; 132.00</div>
+            </div>
+            <form>
+                <p>SHIPPING</p>
+                <select><option class="text-muted">Standard-Delivery- &euro;5.00</option></select>
+                <p>RATE OF <span class="project"> PROGRESS</span></p>
+                <div class="loading-bar-container">
+                  <div class="loading-bar-progress">
+                      <span class="loading-bar-percentage"></span>
+                  </div>
+              </div>
+            </form>
+            <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                <div class="col">TOTAL PRICE</div>
+                <div class="col text-right">&euro; 137.00</div>
+            </div>
+            <button class="btn">CHECKOUT</button>
+        </div>
+    </div>
+    
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scriptCart.js"></script>
+
+<script>
+  // Tạo hiệu ứng loading thanh ngang
+  window.addEventListener("load", function() {
+      var loadingBarProgress = document.querySelector(".loading-bar-progress");
+      var loadingBarPercentage = document.querySelector(".loading-bar-percentage");
+
+          loadingBarPercentage.textContent = "700$"; // Cập nhật giá trị phần trăm
+     
+  });
+</script>
+</body>
+</html>

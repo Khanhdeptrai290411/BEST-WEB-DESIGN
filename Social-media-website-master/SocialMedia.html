@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>EcoTofus social media</title>
+    <link rel="icon" type="image/png" href="../images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <nav class="navbar sticky" style="height: 70px;">
+        <div class="max-width" style="width:100vw;">
+            <div class="logo">
+                <a href="#">Tof<span>us.</span></a>
+            </div>
+            <ul class="menu">
+                <li><a href="../Home.html" class="menu-btn">Home</a></li>
+                <li class="menu-btn1">
+                    <a>Issues<i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="../Home.html#story">Story of Tiger </a></li>
+                        <li><a href="../Animal.html">Animal</a></li>
+                        <li><a href="../Enviroment.html">Enviroment</a></li>
+                    </ul>
+                </li>
+                <li class="menu-btn1">
+                    <a>Project<i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+
+                        <li><a href="../OurWork.html">Protect Animal</a></li>
+                        <li><a href="../OurWork.html">Biodiversity Conservation</a></li>
+                        <li><a href="../OurWork.html">Volunteer</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="SocialMedia.html" style="color:rgb(159, 233, 230);">Tofus Hub</a></li>
+                <li><a href="../Shopping.html" class="menu-btn">Store</a></li>
+                <li><a href="../Home.html#contact">Contact Us</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-pic">
+                        <img src="./images/logo2.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>EcoTofus</h4>
+                    </div>
+                </a>
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="uil uil-compass"></i></span>
+                        <h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span>
+                        <h3>Notifications</h3>
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-pic">
+                                    <img src="./images/Huong.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Huong</b> accepted your friend request
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-pic">
+                                    <img src="./images/Hoang.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Hoang</b> commented on your post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-pic">
+                                    <img src="./images/Khanh3.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Khanh</b> and 210 other liked your post
+                                    <small class="text-muted">4 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-pic">
+                                    <img src="./images/emilia.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Khanh gia gai</b> started following you
+                                    <small class="text-muted"> 11 HOURS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="menu-item" id="messages-notifications">
+                        <i class="uil uil-envelope"><small class="notification-count">6</small></i></span>
+                        <h3>Messages</h3>
+                    </a>
+                    <a class="menu-item " id="theme">
+                        <span><i class="uil uil-palette"></i></span>
+                        <h3>Theme</h3>
+                        <div class="theme-popup">
+                            <div>
+                                <div class="notification-body">
+                                    <b>Choose your background color:</b>
+                                    <div class="theme-switch">
+                                        <div class="switch"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="uil uil-setting"></i></span>
+                        <h3>Settings</h3>
+                    </a>
+
+                    <label class="btn btn-primary" for="create-post">Create Post</label>
+                </div>
+            </div>
+
+
+
+            <div class="middle">
+
+                <form class="create-post">
+                    <div class="profile-pic">
+                        <img src="images/logo2.jpg" alt="">
+                    </div>
+                    <input type="text" placeholder="What's on your mind Tofus?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+
+                <div class="feeds">
+                    <div class="feed" id="volunteer">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="images/logo2.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Tofus</h3>
+                                <small>Đà Nẵng, 42 MINUTES AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+                        <div class="photo">
+                            <video src="../video/first.mp4" width="fit-content" height="fit-content" controls
+                                alt="video bảo vệ môi trường">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span id="myDiv"><i class="fa-regular fa-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="images/Boliao.jpg"></span>
+                            <span><img src="images/gigachadjpg.jpg"></span>
+                            <span><img src="images/Huong.jpg"></span>
+                            ,<p>Liked by <b>EcoTofus</b> and <b id="likeCount">220 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Minh Hoàng</b> They are best (Friend) !
+                                <br><span class="hash-tag"><strong>#Funny</strong></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feed" id="Harnas">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="images/logo2.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Tofus</h3>
+                                <small>Đà Nẵng, 42 MINUTES AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+                        <div class="photo">
+                            <video src="../video/Harnas Namibia.mp4" width="fit-content" height="fit-content" controls
+                                alt="video bảo vệ môi trường">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span id="myDiv"><i class="fa-regular fa-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="images/Boliao.jpg"></span>
+                            <span><img src="images/gigachadjpg.jpg"></span>
+                            <span><img src="images/Huong.jpg"></span>
+                            ,<p>Liked by <b>EcoTofus</b> and <b id="likeCount">220 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Minh Hoàng</b> Animal so cute!!!
+                                <br><span class="hash-tag"><strong>#Funny</strong></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feed" id="South-Africa">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="images/logo2.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Tofus</h3>
+                                <small>Đà Nẵng, 42 MINUTES AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+                        <div class="photo">
+                            <video src="../video/South Africa.mp4" width="fit-content" height="fit-content" controls
+                                alt="video bảo vệ môi trường">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span id="myDiv"><i class="fa-regular fa-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="images/Boliao.jpg"></span>
+                            <span><img src="images/gigachadjpg.jpg"></span>
+                            <span><img src="images/Huong.jpg"></span>
+                            ,<p>Liked by <b>EcoTofus</b> and <b id="likeCount">220 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Minh Hoàng</b> Day in South Africa
+                                <br><span class="hash-tag"><strong>#Funny</strong></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feed" id="Thailand1">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="images/logo2.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Tofus</h3>
+                                <small>Đà Nẵng, 42 MINUTES AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+                        <div class="photo">
+                            <video src="../video/Thailand.mp4" width="fit-content" height="fit-content" controls
+                                alt="video bảo vệ môi trường">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span id="myDiv"><i class="fa-regular fa-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="images/Boliao.jpg"></span>
+                            <span><img src="images/gigachadjpg.jpg"></span>
+                            <span><img src="images/Huong.jpg"></span>
+                            ,<p>Liked by <b>EcoTofus</b> and <b id="likeCount">220 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Minh Hoàng</b> Elephant so cute!
+                                <br><span class="hash-tag"><strong>#Funny</strong></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feed" id="Thailand2">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="images/logo2.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Tofus</h3>
+                                <small>Đà Nẵng, 42 MINUTES AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+                        <div class="photo">
+                            <video src="../video/Thailandd.mp4" width="fit-content" height="fit-content" controls
+                                alt="video bảo vệ môi trường">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span id="myDiv"><i class="fa-regular fa-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="images/Boliao.jpg"></span>
+                            <span><img src="images/gigachadjpg.jpg"></span>
+                            <span><img src="images/Huong.jpg"></span>
+                            ,<p>Liked by <b>EcoTofus</b> and <b id="likeCount">220 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Minh Hoàng</b> They are best (Friend) !
+                                <br><span class="hash-tag"><strong>#Funny</strong></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feed" id="Nha-Trang">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="images/logo2.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Tofus</h3>
+                                <small>Đà Nẵng, 42 MINUTES AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+                        <div class="photo">
+                            <video src="../video/NhaTrang.mp4" width="fit-content" height="fit-content" controls
+                                alt="video bảo vệ môi trường">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span id="myDiv"><i class="fa-regular fa-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="images/Boliao.jpg"></span>
+                            <span><img src="images/gigachadjpg.jpg"></span>
+                            <span><img src="images/Huong.jpg"></span>
+                            ,<p>Liked by <b>EcoTofus</b> and <b id="likeCount">220 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Minh Hoàng</b> They are best (Friend) !
+                                <br><span class="hash-tag"><strong>#Funny</strong></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feed" id="MeKong">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="images/logo2.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Tofus</h3>
+                                <small>Đà Nẵng, 42 MINUTES AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+                        <div class="photo">
+                            <video src="../video/MeKong.mp4" width="fit-content" height="fit-content" controls
+                                alt="video bảo vệ môi trường">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span id="myDiv"><i class="fa-regular fa-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="images/Boliao.jpg"></span>
+                            <span><img src="images/gigachadjpg.jpg"></span>
+                            <span><img src="images/Huong.jpg"></span>
+                            ,<p>Liked by <b>EcoTofus</b> and <b id="likeCount">220 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Minh Hoàng</b> They are best (Friend) !
+                                <br><span class="hash-tag"><strong>#Funny</strong></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="images/Hoang.png" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Minh Hoàng</h3>
+                                <small>Đà Nẵng, 15 MINUTES AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/feed-9.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span id="myDiv"><i class="fa-regular fa-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="images/Boliao.jpg"></span>
+                            <span><img src="images/gigachadjpg.jpg"></span>
+                            <span><img src="images/Huong.jpg"></span>
+                            ,<p>Liked by <b>EcoTofus</b> and <b id="likeCount">220 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Minh Hoàng</b> They are best (Friend) !
+                                <br><span class="hash-tag"><strong>#Funny</strong></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="images/Khanh3.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Quốc Khánh</h3>
+                                <small>Đà Nẵng, 1h AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/feed-10.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span id="myDiv"><i class="fa-regular fa-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="images/Boliao.jpg"></span>
+                            <span><img src="images/gigachadjpg.jpg"></span>
+                            <span><img src="images/Huong.jpg"></span>
+                            ,<p>Liked by <b>Tofus</b> and <b id="likeCount">220 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Quốc Khánh</b>“Chỉ khi nào cái cây cuối cùng bị đốn gục, con cá cuối cùng bị đánh bắt
+                                và dòng suối cuối cùng bị nhiễm độc, chúng ta mới nhận ra rằng tiền là thứ không thể ăn
+                                được”.
+                                - Trích Bức thư của thủ lĩnh da đỏ -
+                                <br><span class="hash-tag"><strong>#Enviroment</strong></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="images/Bao.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Bảo Phạm</h3>
+                                <small>Đà Nẵng, 1 HOUR AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+
+                        <div class="photo">
+                            <img src="images/feed-8.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span id="myDiv"><i class="fa-regular fa-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="images/Khanh3.jpg"></span>
+                            <span><img src="images/Huong.jpg"></span>
+                            <span><img src="images/Hoang.png"></span>
+                            ,<p>Liked by <b>Tofus</b> and <b id="likeCount">188 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Bảo Phạm</b> They even exist longer than me LOL =]
+                                <br><span class="hash-tag"><strong>#Tofus</strong></span>
+                                <br><span class="hash-tag"><strong>#OneEarth</strong></span>
+                                <br><span class="hash-tag"><strong>#Environment-Saver</strong></span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4>
+                        <span><i class="uil uil-edit"></i></span>
+                    </div>
+
+                    <div class="search-bar">
+                        <span><i class="uil uil-search"></i></span>
+                        <input type="search" placeholder="Search Friends" id="message-search">
+                    </div>
+
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(7)</h6>
+                    </div>
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="images/Khanh3.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Quốc Khánh</h5>
+                            <p class="text-muted">You're the best bro</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="images/profile-18.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Dan Smith</h5>
+                            <p class="text-bold">2 New Messages</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="images/Bao.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Phạm Bảo</h5>
+                            <p class="text-muted">Lol u right</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="images/profile-14.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Lana Rose</h5>
+                            <p class="text-bold">Birthday tomorrow!!</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="images/Hoang.png">
+                        </div>
+                        <div class="message-body">
+                            <h5>Minh Hoàng</h5>
+                            <p class="text-muted">Ssup?</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="images/Huong.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Thu Hương</h5>
+                            <p class="text-bold">3 New Messages</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="images/gigachadjpg.jpg">
+                            </div>
+                            <div>
+                                <h5 class="gettext">Gigachad in your area</h5>
+                                <p class="text-muted">8 mutual friends</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary accept-button">Accept</button>
+                            <button class="btn decline-button">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="images/emilia.jpg">
+                            </div>
+                            <div>
+                                <h5 class="gettext">Emilia</h5>
+                                <p class="text-muted">2 mutual friends</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary accept-button">Accept</button>
+                            <button class="btn decline-button">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="images/Boliao.jpg">
+                            </div>
+                            <div>
+                                <h5 class="gettext">Boliao</h5>
+                                <p class="text-muted">1 mutual friend</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary accept-button">Accept</button>
+                            <button class="btn decline-button">Decline</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <script src="jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+        integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+    <Script>
+        var myDiv = document.querySelectorAll("#myDiv");
+        var originalClass = "fa-regular";
+        var newClass = "fa-solid";
+        var clicked = false;
+
+        myDiv.forEach((icon) => {
+            icon.addEventListener('click', (event) => {
+                var target = event.currentTarget;
+                var iconElement = target.querySelector('i');
+
+                if (iconElement.classList.contains('fa-regular')) {
+                    target.innerHTML = '<i class="fa-solid fa-thumbs-up"></i>';
+                    target.classList.remove(originalClass);
+                    target.classList.add(newClass);
+                    var like = target.parentNode.parentNode.parentNode.querySelector('.liked-by');
+                    var likenum = like.querySelector('#likeCount');
+                    var currentCount = parseInt(likenum.innerHTML);
+
+                    // Tăng giá trị lượt like lên 1
+                    var newCount = currentCount + 1;
+
+                    // Cập nhật nội dung của đối tượng hiển thị số lượt like với giá trị mới
+                    likenum.innerHTML = newCount + " others";
+                } else {
+                    target.innerHTML = '<i class="fa-regular fa-thumbs-up"></i>';
+                    target.classList.remove(newClass);
+                    target.classList.add(originalClass);
+                    var like = target.parentNode.parentNode.parentNode.querySelector('.liked-by');
+                    var likenum = like.querySelector('#likeCount');
+                    var currentCount = parseInt(likenum.innerHTML);
+
+                    // Tăng giá trị lượt like lên 1
+                    var newCount = currentCount - 1;
+
+                    // Cập nhật nội dung của đối tượng hiển thị số lượt like với giá trị mới
+                    likenum.innerHTML = newCount + " others";
+                }
+            });
+        });
+
+        myDiv.forEach((icon) => {
+            icon.addEventListener('click', (event) => {
+                var target = event.currentTarget;
+
+                if (!clicked) {
+                    target.innerHTML = '<i class="fa-solid fa-thumbs-up"></i>';
+                    target.classList.remove(originalClass);
+                    target.classList.add(newClass);
+                    clicked = true;
+                } else {
+                    target.innerHTML = '<i class="fa-regular fa-thumbs-up"></i>';
+                    target.classList.remove(newClass);
+                    target.classList.add(originalClass);
+                    clicked = false;
+                }
+            });
+        });
+        var acceptButton = document.querySelectorAll('.accept-button');
+        acceptButton.forEach((btn) => {
+            btn.addEventListener('click', (event) => {
+
+                var target = event.currentTarget;
+
+                if (!clicked) {
+                    var messagesContainer = document.querySelector('.messages'); // Thay đổi tại đây
+                    var profilePicSrc = target.parentNode.parentNode.querySelector('img').src; // Thay đổi tại đây
+                    var newFriendText = target.parentNode.parentNode.querySelector('.gettext').textContent; // Thay đổi tại đây
+
+                    // Tạo một div.message mới
+                    const newMessage = document.createElement('div');
+                    newMessage.classList.add('message');
+
+                    // Thay đổi đường dẫn ảnh và nội dung trong div.message mới
+                    newMessage.innerHTML = `
+        <div class="profile-pic">
+          <img src="${profilePicSrc}">
+          <div class="active"></div>
+        </div>
+        <div class="message-body">
+          <h5>${newFriendText}</h5>
+          <p class="text-bold">We're friends now</p>
+        </div>
+      `;
+
+                    // Thêm div.message mới vào messagesContainer
+                    messagesContainer.appendChild(newMessage);
+
+                    // Ẩn div chứa nút Accept
+                    target.parentNode.parentNode.style.display = 'none';
+                }
+            });
+        });
+        var declineButton = document.querySelectorAll('.decline-button');
+        declineButton.forEach((dec) => {
+            dec.addEventListener('click', (event) => {
+
+                var target = event.currentTarget;
+
+                if (!clicked) {
+                    target.parentNode.parentNode.style.display = 'none';
+                }
+            });
+        });
+
+
+        $(".theme-switch").on("click", () => {
+            $("body").toggleClass("light-theme");
+            //   $("nav").toggleClass("light-theme2");
+            $(" .sidebar").toggleClass("light-theme2");
+            $(" .create-post").toggleClass("light-theme2");
+            $(" .feed").toggleClass("light-theme2");
+            $(" .theme-popup").toggleClass("light-theme2");
+            $(" .notifications-popup").toggleClass("light-theme2");
+            $(" .messages").toggleClass("light-theme2");
+            $(" .request").toggleClass("light-theme2");
+            $("input[type=text]").toggleClass("light-theme2");
+            $("#message-search").toggleClass("light-theme2");
+        });
+        function redirectToHome() {
+            window.location.href = '../Home.html';
+        };
+    </Script>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quản lý đơn hàng</title>
+  <style>
+    /* CSS */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-y: initial;
+      display: flex;
+      justify-content: center;
+    }
+
+    .order-list {
+      margin: 20px;
+    }
+
+    .order-item {
+      background-color: rgb(230, 206, 206);
+      border: 3px solid crimson;  
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      width: 90%;
+      height:fit-content;
+      display: flex;
+      align-items: center;
+    }
+
+    .order-item .order-details {
+      font-weight: bold;
+      text-align: left;
+      flex-grow: 1;
+      margin-left: 10px;
+    }
+
+    .order-item .shipping-date {
+      color: crimson;
+    }
+
+    .order-item .image-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .order-item img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+    .order-item .customer-name {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    .thank-you-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .thank-you {
+      color: green;
+      font-size: 25px;
+      margin-top: 10px;
+      max-width: 100vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="order-list">
+    <div class="thank-you-container">
+      <p class="thank-you">Thanks for your donation, the products will be delivered to you soon!</p>
+    </div>
+    <div class="order-item">
+      <div class="image-container">
+        <img src="images/product1.jpg" alt="Product Image">
+      </div>
+      <div class="order-details">
+        <p>Mã đơn hàng: 002</p>
+        <p class="customer-name">Jane Smith</p>
+        <p>Địa chỉ giao hàng: 456 XYZ Avenue, ABC City</p>
+        <p>Tổng tiền: $80.00</p>
+        <p class="shipping-date">Ngày giao hàng dự kiến: 12/07/2023</p>
+      </div>
+    </div>
+
+    <div class="order-item">
+      <div class="image-container">
+        <img src="images/product1.jpg" alt="Product Image">
+      </div>
+      <div class="order-details">
+        <p>Mã đơn hàng: 002</p>
+        <p class="customer-name">Jane Smith</p>
+        <p>Địa chỉ giao hàng: 456 XYZ Avenue, ABC City</p>
+        <p>Tổng tiền: $80.00</p>
+        <p class="shipping-date">Ngày giao hàng dự kiến: 12/07/2023</p>
+      </div>
+    </div>
+
+    <div class="order-item">
+      <div class="image-container">
+        <img src="images/product1.jpg" alt="Product Image">
+      </div>
+      <div class="order-details">
+        <p>Mã đơn hàng: 002</p>
+        <p class="customer-name">Jane Smith</p>
+        <p>Địa chỉ giao hàng: 456 XYZ Avenue, ABC City</p>
+        <p>Tổng tiền: $80.00</p>
+        <p class="shipping-date">Ngày giao hàng dự kiến: 12/07/2023</p>
+      </div>
+    </div>
+
+    <div class="order-item">
+      <div class="image-container">
+        <img src="images/product1.jpg" alt="Product Image">
+      </div>
+      <div class="order-details">
+        <p>Mã đơn hàng: 002</p>
+        <p class="customer-name">Jane Smith</p>
+        <p>Địa chỉ giao hàng: 456 XYZ Avenue, ABC City</p>
+        <p>Tổng tiền: $80.00</p>
+        <p class="shipping-date">Ngày giao hàng dự kiến: 12/07/2023</p>
+      </div>
+    </div>
+
+    <div class="order-item">
+      <div class="image-container">
+        <img src="images/product1.jpg" alt="Product Image">
+      </div>
+      <div class="order-details">
+        <p>Mã đơn hàng: 002</p>
+        <p class="customer-name">Jane Smith</p>
+        <p>Địa chỉ giao hàng: 456 XYZ Avenue, ABC City</p>
+        <p>Tổng tiền: $80.00</p>
+        <p class="shipping-date">Ngày giao hàng dự kiến: 12/07/2023</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

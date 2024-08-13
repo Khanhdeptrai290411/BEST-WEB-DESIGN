@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../WEB"
+		},
+		{
+			"path": "../BaiTapHTML"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "E:/BWD"
+		},
+		{
+			"path": "../DuAn (2)"
+		},
+		{
+			"path": "C:/xampp/htdocs/DuAn2"
+		},
+		{
+			"path": "C:/xampp/htdocs/Nam2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DuAn"
+	}
+}

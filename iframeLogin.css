@@ -1,0 +1,175 @@
+.login-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+
+}
+
+.login-popup .popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 100%;
+}
+
+.login-popup {
+overflow: hidden;
+
+}
+.popup-content {
+overflow: auto;
+max-height: 100vh;
+}
+.iframe-container {
+  position: relative;
+  left: 34%;
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+@media(max-width:1024px){
+  .iframe-container {
+    position: relative;
+    left: 23%;
+    top: 19%;
+    width: 59%;
+    height: 63%;
+    overflow: hidden;
+
+}
+}
+@media(max-width:960px){
+  .iframe-container {
+    position: relative;
+    left: 23%;
+    top: -2%;
+    width: 59%;
+    height: 85%;
+    overflow: hidden;
+
+}
+}
+@media(max-width:850px){
+  .iframe-container {
+    position: relative;
+    left: 23%;
+    top:16%;  
+    width: 59%;
+    height: 72%;
+    overflow: hidden;
+
+}
+}
+@media(max-width:1000px){
+  .iframe-container {
+    position: relative;
+    left: 23%;
+    top: -8%;
+    width: 59%;
+    height: 98%;
+    overflow: hidden;
+
+}
+}
+@media(max-height:690px){
+  .iframe-container {
+    position: relative;
+    left: 23%;
+    top: -10%;
+    width: 59%;
+    height: 110%;
+    overflow: hidden;
+
+}
+}
+@media(max-width:500px){
+  .iframe-container {
+    position: relative;
+    left: 14%;
+    top: -7%;
+    width: 70%;
+    height: 105%;
+    overflow: hidden;
+
+}
+}
+@media(max-width:320px){
+  .iframe-container {
+    position: relative;
+    left: 8%;
+    top: -10%;
+    width: 83%;
+    height: 109%;
+    overflow: hidden;
+
+}
+}
+.iframe-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.ad-banner {
+position: fixed;
+bottom: 0;
+left: 4%;
+top:90%;
+height: 3.75rem;
+background-color: rgb(0,0,0,0);
+border-top: 1px solid rgb(0,0,0,0);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+}
+
+.ad-banner .content {
+display: flex;
+align-items: center;
+justify-content: left;
+}
+
+.ad-banner .text {
+font-size: 14px;
+color: #fff;
+margin-right: 10px;
+}
+
+.ad-banner .login-btn {
+color: #fff;
+background-color: crimson; 
+box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+padding: 10px 30px;
+border-radius: 1010px;
+font-family: 'Poppins', sans-serif;
+text-decoration: none;
+font-size: 20px;
+font-weight: 700;
+transition: 0.5s ease-out;
+z-index: 999;
+cursor: pointer;
+}
+.login-btn:hover{
+  color: crimson;
+background-color: #fff; 
+transform:scale(1.1);
+border: 2px solid crimson;
+}
+
+.ad-banner .close-btn {
+color: #fff;
+font-size: 30px;
+margin-left: 10px;
+cursor: pointer;
+}
